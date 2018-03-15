@@ -14,11 +14,11 @@
 </template>
 
 <script>
-  import header from 'src/components/Header'
+  import VHeader from 'src/components/topTab'
   export default {
     name: "favorites",
     components:{
-      'v-header':header
+      'v-header':VHeader
     },
     methods:{
       toProfile(){

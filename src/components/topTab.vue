@@ -10,13 +10,10 @@
     props:{
       title:{
         type:String,
-        default:'header'
+        default:'Profile'
       }
     },
     data(){
-      return{
-        title:'Profile'
-      }
     }
 
   }
