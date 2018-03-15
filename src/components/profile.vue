@@ -30,15 +30,15 @@
         aliqua. Ut enim ad minim venia quis nostrud exercitation ullamco laboris...</P>
       <div class="imgBox flex-row flex-y-center">
         <div @click="toLogin" class="flex-grow-1">
-          <img  v-src="'/static/img/facebook.png'" alt="">
+          <img v-src="'/static/img/facebook.png'" alt="">
         </div>
-        <div  @click="toLogin" class="flex-grow-1">
+        <div @click="toLogin" class="flex-grow-1">
           <img v-src="'/static/img/twitter.png'" alt="">
         </div>
-        <div  @click="toLogin" class="flex-grow-1">
+        <div @click="toLogin" class="flex-grow-1">
           <img v-src="'/static/img/google plus.png'" alt="">
         </div>
-        <div  @click="toLogin" class="flex-grow-1">
+        <div @click="toLogin" class="flex-grow-1">
           <img v-src="'/static/img/linkedin.png'" alt="">
         </div>
       </div>
@@ -49,22 +49,18 @@
 <script>
   export default {
     name: "profile",
-    methods:{
-      toLogin(){
+    methods: {
+      toLogin() {
         this.$router.push('/login')
       }
     }
   }
 </script>
-
-<style>
-  body {
-
-  }
-</style>
 <style lang="less" scoped>
   .page {
-
+    width: 100%;
+    height: 100%;
+    background: #ececec;
   }
 
   .right {
@@ -114,42 +110,37 @@
     background: #fff;
     padding: 30px 30px 0;
     color: #6f6f6f;
-    font-size:30px;
+    font-size: 30px;
     margin-top: 30px;
     .about {
       font-size: 26px;
       font-weight: bold;
       color: #363636
     }
-    p{
+    p {
       line-height: 30px;
       text-align: justify;
       margin: 14px 0 50px;
     }
-    .imgBox{
-      border-top:1px solid #ebebeb;
+    .imgBox {
+      border-top: 1px solid #ebebeb;
       height: 91px;
-      img{
+      img {
         width: 44px;
       }
     }
-    .flex-grow-1{
+    .flex-grow-1 {
       text-align: center;
-      &:first-child{
-        >img{
+      &:first-child {
+        > img {
           width: 22px
         }
       }
-      &:last-child{
-        >img{
+      &:last-child {
+        > img {
           width: 45px;
         }
       }
     }
-  }
-</style>
-<style>
-  body {
-    background: #ececec;
   }
 </style>

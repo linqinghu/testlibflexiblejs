@@ -64,6 +64,11 @@
 </script>
 
 <style lang="less" scoped>
+  .page{
+    width: 100%;
+    height: 100%;
+    background: #ffff;
+  }
   .go_top{
     >img{
       display: block;
@@ -149,10 +154,5 @@
     font-size:32px;
     color:#fff;
     background: #fd4c9d;
-  }
-</style>
-<style>
-  body{
-    background: #ffff;
   }
 </style>
