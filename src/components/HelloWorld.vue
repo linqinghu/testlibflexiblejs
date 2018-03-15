@@ -9,6 +9,7 @@
       <div class="icon-item flex-grow-1" v-for="i in 4">
         <img src="../assets/logo.png" alt="">
         待发货
+
       </div>
     </div>
     <div class="flexBox">
