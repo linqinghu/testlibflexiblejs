@@ -1,0 +1,114 @@
+/*common.css*/
+
+.twoLine {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    white-space: normal;
+}
+.oneLine {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    white-space: normal;
+}
+/*去掉Ios input 内阴影*/
+input,textarea{
+    -webkit-appearance: none;
+}
+
+/**/
+
+
+.red{
+    color:#ff1822;
+}
+
+.animate {
+    max-height: 9999px;
+    transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
+    transition-delay: 0s;
+}
+
+.flex{
+  display: flex;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.flex-grow-0{
+  min-width: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.flex-grow-1{
+  min-width:0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.flex-x-center{
+  display: flex;
+  justify-content: center;
+}
+.flex-y-center{
+  display: flex;
+  align-items: center;
+}
+.flex-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flex-y-bottom{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  -ms-grid-row-align: flex-end;
+  align-items: flex-end;
+}
+
+.flex-right{
+  display: flex;
+  justify-content: flex-end;
+}
+.flex-left{
+  display: flex;
+  justify-content: flex-start;
+}
+/*公共列表优惠券左上角图标*/
+.l_t_icon{
+  position: absolute;
+  left:0;
+  top:0;
+  width: .60rem;
+  height: 0.30rem;
+  background-position: center center;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bold_600{
+  font-weight: 600;
+}
+.no_data{
+  text-align: center;
+  margin-top: 200px;
+  color: #b0afb3;
+  font-size: 12px;
+  line-height: 45px;
+}
+
+

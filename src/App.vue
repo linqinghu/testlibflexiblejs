@@ -10,12 +10,10 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style >
   body{
-    width:750px;
+    width: 100%;
+    max-width: 750px;
     margin: 0 auto;
-  }
-  #app{
-
   }
 </style>
