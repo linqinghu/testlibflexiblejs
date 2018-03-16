@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div @click="goTo" class="go_top">
-      <img v-src="'/static/img/top.png'" alt="">
+      <img src="static/img/top.png" alt="">
     </div>
     <div class="toFacebook flex-grow-0 flex-y-center flex-x-center">
       CONNECT WITH FACEBOOK COPY
@@ -19,7 +19,7 @@
             <input type="email" v-model="email">
           </div>
           <div class="flex-grow-0">
-            <img class="clear" v-show="email" @click="clearEmail" v-src="'/static/img/clear.png'" alt="">
+            <img class="clear" v-show="email" @click="clearEmail" src="static/img/clear.png" alt="">
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
             <input type="password" v-model="password">
           </div>
           <div class="flex-grow-0">
-            <img class="clear" @click="clearPassword" v-show="password" v-src="'/static/img/clear.png'" alt="">
+            <img class="clear" @click="clearPassword" v-show="password" src="static/img/clear.png" alt="">
           </div>
         </div>
       </div>

@@ -9,8 +9,8 @@ import 'src/assets/css/rest.css'
 import 'src/assets/css/md-common.css'
 import 'src/assets/css/1px.less'
 
-import imgPlugis from 'src/pugins/img_src_plugin';
-Vue.use(imgPlugis)
+// import imgPlugis from 'src/pugins/img_src_plugin';
+// Vue.use(imgPlugis)
 
 
 

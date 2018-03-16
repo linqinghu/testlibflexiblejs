@@ -3,12 +3,12 @@
     <nav-tab :title="title" :show_right="true"></nav-tab>
     <div class="topBox flex-row">
       <div class="left flex-grow-1">
-        <img v-src="'/static/img/profile1.png'" alt="">
+        <img src="static/img/profile1.png" alt="">
       </div>
       <div class="right flex-grow-0 flex-col">
-        <img v-src="'/static/img/profile2.png'" alt="">
-        <img class="specil" v-src="'/static/img/profile3.png'" alt="">
-        <img v-src="'/static/img/profile4.png'" alt="">
+        <img src="static/img/profile2.png" alt="">
+        <img class="specil" src="static/img/profile3.png" alt="">
+        <img src="static/img/profile4.png" alt="">
       </div>
     </div>
     <div class="descBox flex-row">
@@ -31,16 +31,16 @@
         aliqua. Ut enim ad minim venia quis nostrud exercitation ullamco laboris...</P>
       <div class="imgBox flex-row flex-y-center">
         <div @click="toLogin" class="flex-grow-1">
-          <img v-src="'/static/img/facebook.png'" alt="">
+          <img src="static/img/facebook.png" alt="">
         </div>
         <div @click="toLogin" class="flex-grow-1">
-          <img v-src="'/static/img/twitter.png'" alt="">
+          <img src="static/img/twitter.png" alt="">
         </div>
         <div @click="toLogin" class="flex-grow-1">
-          <img v-src="'/static/img/google plus.png'" alt="">
+          <img src="static/img/google plus.png" alt="">
         </div>
         <div @click="toLogin" class="flex-grow-1">
-          <img v-src="'/static/img/linkedin.png'" alt="">
+          <img src="static/img/linkedin.png" alt="">
         </div>
       </div>
     </div>
@@ -49,14 +49,15 @@
 
 <script>
   import NavTab from 'src/components/NavTab'
+
   export default {
     name: "profile",
-    data(){
+    data() {
       return {
-        title:'Profile'
+        title: 'Profile'
       }
     },
-    components:{NavTab},
+    components: {NavTab},
     methods: {
       toLogin() {
         this.$router.push('/login')
