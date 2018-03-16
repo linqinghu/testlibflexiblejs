@@ -1,11 +1,11 @@
 <template>
   <div class="page">
-    <v-header></v-header>
+    <nav-tab :title="title"></nav-tab>
     <div class="like flex-row flex-y-center flex-x-center">YOU LIKED</div>
     <div class="imgBox flex-list">
       <div @click="toProfile" class="list" v-for="i in 8">
         <div class="img">
-          <img v-src="'static/img/Layer 1189.png'" alt="">
+          <img src="static/img/Layer 1189.png" alt="">
         </div>
         <div>Maybell Dynes</div>
       </div>
@@ -14,11 +14,20 @@
 </template>
 
 <script>
-  import VHeader from 'src/components/topTab'
+  import NavTab from 'src/components/NavTab'
   export default {
     name: "favorites",
+    data(){
+      return {
+        title:'Profile'
+      }
+    },
     components:{
-      'v-header':VHeader
+      NavTab
+    },
+    created(){
+      //this.$store.state.dataStatus.top_right=true;
+      //this.$store.dispatch();
     },
     methods:{
       toProfile(){
@@ -37,6 +46,7 @@
     border-bottom: 3px solid #363636;
     height: 74px;
     font-weight: bold;
+    background: #fff;
   }
   .imgBox{
     min-height: 100%;

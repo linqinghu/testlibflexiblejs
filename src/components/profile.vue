@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+    <nav-tab :title="title" :show_right="true"></nav-tab>
     <div class="topBox flex-row">
       <div class="left flex-grow-1">
         <img v-src="'/static/img/profile1.png'" alt="">
@@ -47,8 +48,15 @@
 </template>
 
 <script>
+  import NavTab from 'src/components/NavTab'
   export default {
     name: "profile",
+    data(){
+      return {
+        title:'Profile'
+      }
+    },
+    components:{NavTab},
     methods: {
       toLogin() {
         this.$router.push('/login')
